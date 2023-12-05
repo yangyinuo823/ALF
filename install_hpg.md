@@ -1,1 +1,14 @@
-```conda create -n hipnn python=3.8```
+- create environment, may need to use python3.9
+  - ```conda create -n hipnn python=3.8```
+  - ```conda activate hipnn```
+- install dependencies for hippynn
+  - ```conda install pytorch==1.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge```
+  - ```conda install -c conda-forge cupy numba```
+  - ```conda install -c conda-forge h5py tqdm matplotlib python-graphviz pandas```
+- install ase from gitlab repo
+  - ```cd ase```
+  - ```git install -e .```
+- install hippynn
+  - ```cd hippynn```
+  - ```git install -e .```
+
